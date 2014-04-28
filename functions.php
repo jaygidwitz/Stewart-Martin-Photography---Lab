@@ -27,9 +27,11 @@ function parallax_enqueue_scripts_styles() {
 
 	wp_enqueue_script( 'parallax-responsive-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0' );
 	wp_enqueue_style( 'dashicons' );
-	wp_enqueue_style( 'parallax-google-fonts', '//fonts.googleapis.com/css?family=Montserrat|Sorts+Mill+Goudy', array(), CHILD_THEME_VERSION );
+	wp_enqueue_style( 'parallax-google-fonts', '//fonts.googleapis.com/css?family=Titillium+Web:400,400italic', array(), CHILD_THEME_VERSION );
 
 }
+
+
 
 //* Add HTML5 markup structure
 add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list' ) );
