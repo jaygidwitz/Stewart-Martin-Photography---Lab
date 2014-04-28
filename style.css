@@ -1,9 +1,9 @@
 /*
-	Theme Name: Parallax Pro Theme
-	Theme URI: http://my.studiopress.com/themes/parallax/
+	Theme Name: Stewart Martin Lab + Photography
+	Theme URI: http://studioissa.com/web-design/
 	Description: A mobile responsive and HTML5 theme built for the Genesis Framework.
-	Author: StudioPress
-	Author URI: http://www.studiopress.com/
+	Author: StudioIssa
+	Author URI: http://www.studioissa.com/
 
 	Version: 1.0
 
@@ -144,7 +144,7 @@ Defaults
 body {
 	background-color: #fff;
 	color: #000;
-	font-family: 'Sorts Mill Goudy', sans-serif;
+	font-family: 'Titillium Web', 'sans-serif';
 	font-size: 22px;
 	font-weight: 400;
 	line-height: 1.5;
@@ -239,7 +239,7 @@ h4,
 h5,
 h6 {
 	color: #000;
-	font-family: Montserrat, sans-serif;
+	font-family: 'Titillium Web', 'sans-serif';
 	font-weight: 400;
 	line-height: 1.2;
 	margin: 0 0 20px;
@@ -250,7 +250,7 @@ h1 {
 }
 
 h2 {
-	font-size: 32px;
+	font-size: 12px;
 }
 
 h3 {
@@ -345,7 +345,7 @@ input[type="submit"] {
 	border: none;
 	color: #fff;
 	cursor: pointer;
-	font-family: Montserrat, sans-serif;
+	font-family: 'Titillium Web', 'sans-serif';
 	font-size: 18px;
 	font-weight: 400;
 	letter-spacing: 1px;
@@ -374,7 +374,7 @@ input[type="search"]::-webkit-search-results-button {
 .home-odd a.button {
 	clear: both;
 	display: inline-block;
-	font-family: Montserrat, sans-serif;
+	font-family: 'Titillium Web', 'sans-serif';v
 	font-size: 18px;
 	font-weight: 400;
 	letter-spacing: 1px;
@@ -824,7 +824,7 @@ Site Header
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-	background-color: #000;
+	background-color: white;
 	position: fixed;
 	width: 100%;
 	z-index: 999;
@@ -840,22 +840,33 @@ Site Header
 }
 
 .header-full-width .title-area {
-	width: 100%;
+	width: 167px;
 }
 
 .site-title {
-	font-family: Montserrat, sans-serif;
-	font-size: 30px;
+	font-family: 'Titillium Web', 'sans-serif';
+	font-size: 12px;
 	font-weight: 400;
 	letter-spacing: 1px;
 	line-height: 1;
 	margin-bottom: 0;
 	text-transform: uppercase;
+	border: solid 2px #222;
+	-moz-transition: border 0.15s linear;
+	-webkit-transition: border 0.15s linear;
+	-o-transition: border 0.15s linear;
+	-ms-transition: border 0.15s linear;
+	transition: border 0.15s linear;
+	padding: 12px 12px;
+	letter-spacing: 1.3px;
+	text-align: center;
 }
 
 .site-title a,
 .site-title a:hover {
-	color: #fff !important;
+	color: #222 !important;
+	text-align: center;
+	line-height: 16px;
 }
 
 .header-image .title-area {
@@ -872,9 +883,13 @@ Site Header
 
 .site-description {
 	display: block;
-	height: 0;
+	height: 20px;
 	margin-bottom: 0;
 	text-indent: -9999px;
+	font-size: 12px;
+	text-transform: uppercase;
+	/* text-align: center; */
+	margin: 6px 6px 6px 12px;
 }
 
 /* Widget Area
@@ -907,7 +922,7 @@ Site Navigation
 .genesis-nav-menu {
 	clear: both;
 	color: #fff;
-	font-family: Montserrat, sans-serif;
+	font-family: 'Titillium Web', 'sans-serif';
 	font-size: 16px;
 	font-weight: 400;
 	letter-spacing: 1px;
@@ -927,7 +942,7 @@ Site Navigation
 .genesis-nav-menu a {
 	color: #fff;
 	display: block;
-	font-family: Montserrat, sans-serif;
+	font-family: 'Titillium Web', 'sans-serif';
 	padding: 27px 20px;
 }
 
@@ -1335,7 +1350,7 @@ p.entry-meta {
 	color: #fff;
 	cursor: pointer;
 	display: inline-block;
-	font-family: Montserrat, sans-serif;
+	font-family: 'Titillium Web', 'sans-serif';
 	font-size: 14px;
 	letter-spacing: 1px;
 	padding: 8px 12px;
@@ -1548,7 +1563,7 @@ Site Footer
 }
 
 .site-footer p {
-	font-family: Montserrat, sans-serif;
+	font-family: 'Titillium Web', 'sans-serif';
 	font-size: 12px;
 	letter-spacing: 1px;
 	margin-bottom: 0;
