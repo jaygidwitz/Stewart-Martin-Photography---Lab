@@ -448,6 +448,11 @@ Structure and Layout
 	max-width: 1140px;
 }
 
+header.site-header .wrap {
+	border-bottom: 1px #999 solid;
+	height: 70px;
+}
+
 .site-inner {
 	clear: both;
 	margin-top: 170px;
@@ -643,7 +648,7 @@ Common Classes
 
 .footer-widgets .widget-title {
 	color: #fff;
-	font-size: 48px;
+	font-size: 21px;
 }
 
 .home-even .widget-title,
@@ -748,12 +753,32 @@ Widgets
 }
 
 .parallax-home .simple-social-icons ul li {
-	margin: 0 20px !important;
+	/* margin: 0 20px !important; */
 }
 
 .parallax-home .simple-social-icons ul li a,
 .parallax-home .simple-social-icons ul li a:hover {
-	padding: 30px;
+	padding: 12px;
+	font-size: 28px;
+}
+
+
+
+
+aside.header-widget-area .simple-social-icons {
+	margin-top: 0px;
+}
+
+aside.header-widget-area .simple-social-icons ul.alignleft {
+	float: right;
+	text-align: right;
+}
+
+aside.header-widget-area .simple-social-icons ul li a,
+aside.header-widget-area .simple-social-icons ul li a:hover {
+	padding: 12px;
+	font-size: 16px;
+	color: #333;
 }
 
 
@@ -828,6 +853,7 @@ Site Header
 	position: fixed;
 	width: 100%;
 	z-index: 999;
+	height: 115px;
 }
 
 /* Title Area
@@ -835,8 +861,8 @@ Site Header
 
 .title-area {
 	float: left;
-	padding: 20px 0;
-	width: 360px;
+	padding: 0;
+	width: 267px;
 }
 
 .header-full-width .title-area {
@@ -845,28 +871,28 @@ Site Header
 
 .site-title {
 	font-family: 'Titillium Web', 'sans-serif';
-	font-size: 12px;
+	font-size: 24px;
 	font-weight: 400;
 	letter-spacing: 1px;
 	line-height: 1;
 	margin-bottom: 0;
 	text-transform: uppercase;
-	border: solid 2px #222;
+	/* border: solid 2px #222; */
 	-moz-transition: border 0.15s linear;
-	-webkit-transition: border 0.15s linear;
+	/* -webkit-transition: border 0.15s linear; */
 	-o-transition: border 0.15s linear;
 	-ms-transition: border 0.15s linear;
-	transition: border 0.15s linear;
-	padding: 12px 12px;
+	/* transition: border 0.15s linear; */
+	padding: 22px 20px;
 	letter-spacing: 1.3px;
-	text-align: center;
+	text-align: left;
 }
 
 .site-title a,
 .site-title a:hover {
 	color: #222 !important;
-	text-align: center;
-	line-height: 16px;
+	text-align: left;
+	line-height: 1;
 }
 
 .header-image .title-area {
@@ -882,14 +908,13 @@ Site Header
 }
 
 .site-description {
-	display: block;
-	height: 20px;
+	/* display: none; */
 	margin-bottom: 0;
-	text-indent: -9999px;
+	/* text-indent: -9999px; */
 	font-size: 12px;
 	text-transform: uppercase;
-	/* text-align: center; */
-	margin: 6px 6px 6px 12px;
+	text-align: left;
+	margin: 17px 20px 12px 20px;
 }
 
 /* Widget Area
@@ -903,7 +928,7 @@ Site Header
 
 .site-header .widget-area,
 .site-header .widget-area a {
-	color: #fff;
+	color: #222;
 }
 
 .site-header .widget-area a:hover {
@@ -921,11 +946,11 @@ Site Navigation
 
 .genesis-nav-menu {
 	clear: both;
-	color: #fff;
+	color: #222;
 	font-family: 'Titillium Web', 'sans-serif';
-	font-size: 16px;
+	font-size: 12px;
 	font-weight: 400;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 	line-height: 1;
 	width: 100%;
 }
@@ -943,7 +968,7 @@ Site Navigation
 	color: #fff;
 	display: block;
 	font-family: 'Titillium Web', 'sans-serif';
-	padding: 27px 20px;
+	padding: 30px 20px;
 }
 
 .genesis-nav-menu a:hover,
@@ -1519,9 +1544,9 @@ Footer Widgets
 .footer-widgets {
 	background-color: #f04848;
 	clear: both;
-	font-size: 24px;
+	font-size: 14px;
 	padding: 100px 0;
-	text-align: center;
+	text-align: left;
 }
 
 .footer-widgets,
@@ -1569,6 +1594,27 @@ Site Footer
 	margin-bottom: 0;
 	text-transform: uppercase;
 }
+
+
+.footer-widgets-1, 
+.footer-widgets-2, 
+.footer-widgets-3, 
+.footer-widgets-4 {
+	width: 21.875%; /* 252px / 1152px */
+}
+ 
+.footer-widgets-1, 
+.footer-widgets-2, 
+.footer-widgets-3 {
+	float: left;
+	margin-right: 4.166667%; /* 48px / 1152px */
+}
+.footer-widgets-4 {
+	float: right;
+}
+
+
+
 
 
 /*
@@ -1875,6 +1921,25 @@ Media Queries
 	.parallax-home .simple-social-icons ul li {
 		margin: 0 20px 20px !important;
 	}
+	
+	
+	
+	
+	.footer-widgets-1,
+	.footer-widgets-2,
+	.footer-widgets-3,
+	.footer-widgets-4 {
+		width: 47.9166666666%; /* 552px / 1152px */
+	}
+	
+	.footer-widgets-2 {
+		float: right;
+		margin: 0;
+	}
+	
+	
+	
+	
 
 }
 
@@ -1890,5 +1955,21 @@ Media Queries
 	.home-odd {
 		font-size: 22px;
 	}
+	
+	
+	
+	.footer-widgets-1,
+	.footer-widgets-2,
+	.footer-widgets-3,
+	.footer-widgets-4 {
+		width: 100%;
+	}
+	
+	.footer-widgets-1,
+	.footer-widgets-2,
+	.footer-widgets-3 {
+		margin: 0;
+	}
+
 
 }
